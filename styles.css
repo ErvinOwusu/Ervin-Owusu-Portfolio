@@ -603,6 +603,10 @@ img {
     background: linear-gradient(135deg, #2d2d2d 0%, #1e1e1e 50%, #252525 100%);
 }
 
+.project-placeholder.wmw {
+    background: linear-gradient(135deg, #1a1410 0%, #2a1f18 50%, #3d2e24 100%);
+}
+
 .placeholder-content {
     display: flex;
     flex-direction: column;
