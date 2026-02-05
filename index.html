@@ -3,429 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ervin Owusu | Computer Science Portfolio</title>
+    <title>Ervin Owusu | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">EO</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-bg-pattern"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Ervin Owusu</h1>
-                <p class="hero-title">Computer Science Student at RPI</p>
-                <p class="hero-subtitle">Passionate about software development and digital experiences.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="https://i.imgur.com/uK3wbuh.png" alt="Ervin Owusu" class="profile-img">
-                    <div class="image-decoration"></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        Self-motivated Computer Science major with a minor in Cognitive Science at <span class="highlight">Rensselaer Polytechnic Institute</span> (Class of 2027). I love problem-solving and technical challenges, both in and out of the classroom.
-                    </p>
-                    <p>
-                        I am proficient in Python, Java, C++, and web development. I actively apply my skills as the creator and manager of a video game wiki (view below), handling all coding, content, team leadership, and backend responsibilities. This has strengthened my organization, troubleshooting, and communication skills, and led to opportunities as a game tester.
-                    </p>
-                    <p>
-                        Outside of the classroom, I participate in extracirriculars (Track & Field, indoor and outdoor), and I'm currently a participant of the Bridge Scholars Program. 
-                    </p>
-                    <p>
-                        I am eager to apply my technical and interpersonal skills professionally and am seeking an internship or entry-level opportunities to further grow my experience in the field.
-                    </p>
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="logo">Ervin Owusu</h1>
+                    <p class="tagline">Computer Science Student at RPI</p>
                 </div>
-                <div class="about-details">
-                    <div class="detail-card">
-                        <h3>Education</h3>
-                        <div class="education-item">
-                            <span class="edu-school">Rensselaer Polytechnic Institute</span>
-                            <span class="edu-degree">B.S. Computer Science</span>
-                            <span class="edu-year">Expected 2027</span>
-                        </div>
-                        <div class="education-item">
-                            <span class="edu-school">Woodland Regional High School</span>
-                            <span class="edu-year">Class of 2023</span>
-                        </div>
-                    </div>
-                    <div class="detail-card">
-                        <h3>Relevant Coursework</h3>
-                        <div class="course-tags">
-                            <span class="tag">Data Structures</span>
-                            <span class="tag">Algorithms</span>
-                            <span class="tag">Computer Organization</span>
-                            <span class="tag">Principles of Software</span>
-                            <span class="tag">Calculus I</span>
-                            <span class="tag">Calculus II</span>
-                            <span class="tag">Linear Algebra</span>
-                            <span class="tag">Digital Imaging</span>
-                            <span class="tag">Linear Algebra</span>
-                        </div>
-                    </div>
-                </div>
+                <nav class="nav">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </nav>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Main Content -->
+    <main class="main">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">A selection of my work spanning web development, 3D graphics, and software engineering.</p>
-            
-            <div class="projects-grid">
-                <!-- Project 1: Three.js Project -->
-                <article class="project-card featured">
-                    <div class="project-image">
-                        <div class="project-placeholder threejs">
-                            <div class="placeholder-content">
-                                <span class="placeholder-icon">🎬</span>
-                                <span class="placeholder-text">3D Interactive</span>
+            <!-- About Section -->
+            <section id="about" class="section">
+                <div class="collapsible-box">
+                    <button class="collapsible-header" aria-expanded="true">
+                        <h2>About</h2>
+                        <span class="toggle-icon">−</span>
+                    </button>
+                    <div class="collapsible-content open">
+                        <div class="about-grid">
+                            <div class="about-text">
+                                <p class="intro">
+                                    Self-motivated Computer Science major with a minor in Cognitive Science at <strong>Rensselaer Polytechnic Institute</strong> (Class of 2027). I love problem-solving and technical challenges, both in and out of the classroom.
+                                </p>
+                                <p>
+                                    Proficient in Python, Java, C++, and web development. I actively apply my skills as the creator and manager of a video game wiki, handling all coding, content, team leadership, and backend responsibilities. This has strengthened my organization, troubleshooting, and communication skills.
+                                </p>
+                                <p>
+                                    <strong><u>Upcoming Research:</u></strong> I will be soon be partaking in cognitive research at RPI, utilizing technology to understand human cognition. This opportunity will let me contribute to interdisciplinary research to support my cognitive science minor.
+                                </p>
+                                <p>
+                                    Outside of the classroom, I participate in extracurriculars (Track & Field, indoor and outdoor), and I'm currently a participant of the Bridge Scholars Program. I enjoy video game testing and creating UI concepts for indie game developers.
+                                </p>
+                            </div>
+                            <div class="about-details">
+                                <div class="detail-group">
+                                    <h3>Education</h3>
+                                    <div class="detail-item">
+                                        <strong>Rensselaer Polytechnic Institute</strong>
+                                        <span>B.S. Computer Science, Expected 2027</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Woodland Regional High School</strong>
+                                        <span>Class of 2023</span>
+                                    </div>
+                                </div>
+                                <div class="detail-group">
+                                    <h3>Relevant Coursework</h3>
+                                    <div class="tags">
+                                        <span>Intro to Algorithms</span>
+                                        <span>Principles of Software</span>
+                                        <span>Computer Science I</span>
+                                        <span>Data Structures</span>
+                                        <span>Computer Organizations</span>
+                                        <span>Computer Foundations</span>
+                                        <span>Linear Algebra</span>
+                                        <span>Digital Imaging</span>
+                                        <span>Intro to Cognitive Science</span>
+                                        <span>Behavioral Neuroscience</span>
+                                        <span>Intro to Linguistics</span>
+                                        <span>Critical Thinking</span>
+                                        <span>Social Computing</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://ervinowusu.github.io/three-js-project/" class="project-link" target="_blank">Live Demo →</a>
-                        </div>
                     </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>Three.js</span>
-                            <span>Blender</span>
-                            <span>WebGL</span>
-                        </div>
-                        <h3>3D Theater Experience</h3>
-                        <p>An interactive 3D web experience built with Three.js and custom Blender models. Features a theatrical presentation with animated searchlights, dynamic overlays, and GLTF model loading.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/ErvinOwusu/three-js-project" target="_blank" class="github-link">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                View Code
-                            </a>
-                            <a href="https://ervinowusu.github.io/three-js-project/" target="_blank" class="demo-link">
-                                Live Site →
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                </div>
+            </section>
 
-                <!-- Project 2: PARKOUR Reborn Wiki -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder wiki">
-                            <div class="placeholder-content">
-                                <span class="placeholder-icon">📚</span>
-                                <span class="placeholder-text">Wiki Platform</span>
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <div class="collapsible-box">
+                    <button class="collapsible-header" aria-expanded="false">
+                        <h2>Projects</h2>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="collapsible-content">
+                        <div class="projects-list">
+
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h3>Site Developer, Administrator, and Director</h3>
+                                    <div class="project-tags">
+                                        <span>Project Management</span>
+                                        <span>Content Strategy</span>
+                                        <span>Full Stack</span>
+                                    </div>
+                                </div>
+                                <ul class="project-bullets">
+                                    <li>Created and run a large-scale video game encyclopedia, overseeing site structure, policy, and documentation standards.</li>
+                                    <li>Coordinate contributors, enforce editorial guidelines, and manage content across 100+ pages.</li>
+                                    <li>Planned and executed a full migration from Fandom to independent MediaWiki hosting, preserving structure and revision history.</li>
+                                    <li>Technologies: MediaWiki, Wikitext, HTML, CSS.</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://parkourreborn.wiki/" target="_blank">Visit Wiki →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h3>3D Theater Experience</h3>
+                                    <div class="project-tags">
+                                        <span>Three.js</span>
+                                        <span>Blender</span>
+                                        <span>WebGL</span>
+                                    </div>
+                                </div>
+                                <p>An interactive 3D web experience built with Three.js and custom Blender models. Features a theatrical presentation with animated searchlights, dynamic overlays, and GLTF model loading.</p>
+                                <div class="project-links">
+                                    <a href="https://ervinowusu.github.io/three-js-project/" target="_blank">Live Demo →</a>
+                                    <a href="https://github.com/ErvinOwusu/three-js-project" target="_blank">GitHub →</a>
+                                </div>
+                            </div>
+
+
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h3>Data Structures Projects</h3>
+                                    <div class="project-tags">
+                                        <span>C++</span>
+                                        <span>Algorithms</span>
+                                        <span>Academic</span>
+                                    </div>
+                                </div>
+                                <p>A collection of a few projects from RPI's Data Structures course, implementing various algorithms and data structures with a focus on efficiency and clean code practices.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/ErvinOwusu/Data-Structures-Projects" target="_blank">GitHub →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h3>Course Catalog & Tools Suite</h3>
+                                    <div class="project-tags">
+                                        <span>Java</span>
+                                        <span>OOP</span>
+                                        <span>AP CS A</span>
+                                    </div>
+                                </div>
+                                <p>End of year project for AP Computer Science featuring a school course catalog, customizable schedule builder, and interactive study tool with flashcard functionality.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/APCSA2122/EndOfYearProject" target="_blank">GitHub →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h3>Woodland Metal Works</h3>
+                                    <div class="project-tags">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                                <p>A multi-page business website created during high school for a local metal works company. Led development of the site including homepage, product catalog, about page, FAQ, and contact forms.</p>
+                                <div class="project-links">
+                                    <a href="https://ervinowusu.github.io/WMW/" target="_blank">Live Site →</a>
+                                    <a href="https://github.com/ErvinOwusu/WMW" target="_blank">GitHub →</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://parkourreborn.wiki/" class="project-link" target="_blank">Visit Site →</a>
-                        </div>
                     </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>Project Management</span>
-                            <span>Web Dev</span>
-                            <span>Content Strategy</span>
-                            <span>Full Stack</span>
-                        </div>
-                        <h3>PARKOUR Reborn Wiki</h3>
-                        <p>Sole developer and admin of a comprehensive wiki platform. I designed everything from scratch, manage its information architecture, and organize content for people to quickly access information on the game. I write custom code and templates to present complex data in a visually interesting way + accessible formats.</p>
-                        <div class="project-links">
-                            <a href="https://parkourreborn.wiki/" target="_blank" class="demo-link">
-                                Visit Wiki →
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                </div>
+            </section>
 
-                <!-- Project 3: Data Structures Projects -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder ds">
-                            <div class="placeholder-content">
-                                <span class="placeholder-icon">🔬</span>
-                                <span class="placeholder-text">Data Structures</span>
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <div class="collapsible-box">
+                    <button class="collapsible-header" aria-expanded="false">
+                        <h2>Skills & Technologies</h2>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="collapsible-content">
+                        <div class="skills-grid">
+                            <div class="skill-group">
+                                <h3>Programming Languages</h3>
+                                <div class="skill-list">
+                                    <div class="skill-item">
+                                        <span>Python</span>
+                                        <div class="skill-level" style="--level: 95%"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>Java</span>
+                                        <div class="skill-level" style="--level: 95%"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>C++</span>
+                                        <div class="skill-level" style="--level: 70%"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>C</span>
+                                        <div class="skill-level" style="--level: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <h3>Web Development</h3>
+                                <div class="skill-list">
+                                    <div class="skill-item">
+                                        <span>HTML/CSS</span>
+                                        <div class="skill-level" style="--level: 99%"></div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span>JavaScript</span>
+                                        <div class="skill-level" style="--level: 45%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <h3>Tools & Software</h3>
+                                <div class="tags">
+                                    <span>Git</span>
+                                    <span>VS Code</span>
+                                    <span>MediaWiki</span>
+                                    <span>Photoshop</span>
+                                    <span>Blender</span>
+                                    <span>Excel</span>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <h3>Soft Skills</h3>
+                                <div class="tags">
+                                    <span>Quick Learner</span>
+                                    <span>Attention to Detail</span>
+                                    <span>Problem-Solving</span>
+                                    <span>Project Management</span>
+                                    <span>Communication</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/ErvinOwusu/Data-Structures-Projects" class="project-link" target="_blank">View Code →</a>
-                        </div>
                     </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>C++</span>
-                            <span>Algorithms</span>
-                            <span>Academic</span>
-                        </div>
-                        <h3>Data Structures Projects</h3>
-                        <p>A selection of homework assignments from RPI's Data Structures course, implementing various algorithms and data structures with a focus on efficiency and clean code practices.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/ErvinOwusu/Data-Structures-Projects" target="_blank" class="github-link">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                View Code
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                </div>
+            </section>
 
-                <!-- Project 4: Woodland End of Year Project -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder java">
-                            <div class="placeholder-content">
-                                <span class="placeholder-icon">☕</span>
-                                <span class="placeholder-text">Java Application</span>
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <div class="collapsible-box">
+                    <button class="collapsible-header" aria-expanded="false">
+                        <h2>Experience</h2>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="collapsible-content">
+                        <div class="experience-list">
+                            <div class="experience-item">
+                                <div class="exp-header">
+                                    <h3>Work Study - ISE Department</h3>
+                                    <span class="exp-date">2025 - Present</span>
+                                </div>
+                                <p class="exp-company">Rensselaer Polytechnic Institute</p>
+                                <p>Supporting administrative operations and event preparation for the Department of Industrial & Systems Engineering while balancing full-time coursework.</p>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="exp-header">
+                                    <h3>Package Handler</h3>
+                                    <span class="exp-date">Summer 2025</span>
+                                </div>
+                                <p class="exp-company">FedEx, Middletown, CT</p>
+                                <p>Managed high-volume package sorting and handling operations, ensuring efficient workflow and delivery accuracy in a fast-paced environment.</p>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="exp-header">
+                                    <h3>Lead Administrator & Site Director</h3>
+                                    <span class="exp-date">2022 - Present</span>
+                                </div>
+                                <p class="exp-company">PARKOUR Reborn Wiki</p>
+                                <p>Founded and manage a comprehensive wiki platform, handling full-stack development, editorial standards, and team coordination.</p>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="exp-header">
+                                    <h3>Back of House</h3>
+                                    <span class="exp-date">2021 - 2024</span>
+                                </div>
+                                <p class="exp-company">Country Club of Waterbury</p>
+                                <p>Maintained kitchen operations during high-volume dinner services and large events, working closely with culinary staff to ensure smooth service flow.</p>
                             </div>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/APCSA2122/EndOfYearProject" class="project-link" target="_blank">View Code →</a>
-                        </div>
                     </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>Java</span>
-                            <span>OOP</span>
-                            <span>AP CS A</span>
-                        </div>
-                        <h3>Course Catalog & Tools Suite</h3>
-                        <p>End of year project for AP Computer Science featuring a school course catalog, customizable schedule builder, and interactive study tool with flashcard functionality.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/APCSA2122/EndOfYearProject" target="_blank" class="github-link">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                View Code
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                </div>
+            </section>
 
-                <!-- Project 5: Woodland Metal Works -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder wmw">
-                            <div class="placeholder-content">
-                                <span class="placeholder-icon">🔩</span>
-                                <span class="placeholder-text">Business Website</span>
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="collapsible-box">
+                    <button class="collapsible-header" aria-expanded="false">
+                        <h2>Contact</h2>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="collapsible-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <strong>Email:</strong>
+                                <a href="mailto:ejowusu486@gmail.com">ejowusu486@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Location:</strong>
+                                <span>Seymour, CT / Troy, NY</span>
+                            </div>
+                            <div class="contact-item">
+                                <strong>LinkedIn:</strong>
+                                <a href="https://www.linkedin.com/in/ervin-owusu-8a146b284/" target="_blank">Connect with me</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>GitHub:</strong>
+                                <a href="https://github.com/ErvinOwusu" target="_blank">View my work</a>
                             </div>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://ervinowusu.github.io/WMW/" class="project-link" target="_blank">Live Site →</a>
-                        </div>
                     </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <h3>Woodland Metal Works</h3>
-                        <p>A multi-page business website created during high school for a local metal works company. Led development of the site including homepage, product catalog, about page, FAQ, and contact forms.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/ErvinOwusu/WMW" target="_blank" class="github-link">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                View Code
-                            </a>
-                            <a href="https://ervinowusu.github.io/WMW/" target="_blank" class="demo-link">
-                                Live Site →
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
+                </div>
+            </section>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 95%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Java</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">C++</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 55%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">C</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 30%"></div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">HTML/CSS</span>
-                            <div class="skill-bar"><div class="skill-progress" style="--progress: 99%"></div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Other Tools & Software</h3>
-                    <div class="skill-tags">
-                        <span>Git</span>
-                        <span>VS Code</span>
-                        <span>MediaWiki</span>
-                        <span>Photoshop</span>
-                        <span>Blender</span>
-                        <span>Excel</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-tags">
-                        <span>Attention to Detail</span>
-                        <span>Adaptability & Continuous Learning</span>
-                        <span>Procedural Thinking</span>
-                        <span>Problem-Solving</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2025 - Present</span>
-                        <h3>Work Study - ISE Department</h3>
-                        <p class="timeline-company">Rensselaer Polytechnic Institute</p>
-                        <p>Supporting administrative operations and event preparation for the Department of Industrial & Systems Engineering while balancing full-time coursework.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Summer 2025</span>
-                        <h3>Package Handler</h3>
-                        <p class="timeline-company">FedEx, Middletown, CT</p>
-                        <p>Managed high-volume package sorting and handling operations, ensuring efficient workflow and delivery accuracy in a fast-paced environment.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2022 - Present</span>
-                        <h3>Lead Administrator & Site Director</h3>
-                        <p class="timeline-company">PARKOUR Reborn Wiki</p>
-                        <p>Founded and manage a comprehensive wiki platform, handling full-stack development, editorial standards, and team coordination.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2021 - 2024</span>
-                        <h3>Back of House</h3>
-                        <p class="timeline-company">Country Club of Waterbury</p>
-                        <p>Maintained kitchen operations during high-volume dinner services and large events, working closely with culinary staff to ensure smooth service flow.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">REACH ME</h2>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div class="contact-details">
-                            <span class="contact-label">Email</span>
-                            <a href="mailto:ejowusu486@gmail.com">ejowusu486@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-details">
-                            <span class="contact-label">Location</span>
-                            <span>Seymour, CT / Troy, NY</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🔗</div>
-                        <div class="contact-details">
-                            <span class="contact-label">LinkedIn</span>
-                            <a href="https://www.linkedin.com/in/ervin-owusu-8a146b284/" target="_blank">Connect with me</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="https://github.com/ErvinOwusu" target="_blank" class="social-link" aria-label="GitHub">
-                        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ervin-owusu-8a146b284/" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer
-    <footer class="footer">
-        <div class="container">
-            <p>Designed & Built by Ervin Owusu</p>
-            <p class="footer-year">© 2025</p>
-        </div>
-    </footer> -->
+    </main>
 
     <script src="script.js"></script>
 </body>
